@@ -47,8 +47,6 @@ public class LoginBiz {
     public String login(String email, String password) throws Exception {
         User user = userService.getUser(email);
 
-        System.out.println(user);
-
         //登录信息检查
         if (user == null)
             throw new LoginRegisterException("邮箱不存在");
