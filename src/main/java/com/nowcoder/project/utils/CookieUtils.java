@@ -30,6 +30,7 @@ public class CookieUtils {
         return null;
     }
 
+    // 删除cookie
     public static void removeCookie(String key, HttpServletRequest request,
                                     HttpServletResponse response) {
 
